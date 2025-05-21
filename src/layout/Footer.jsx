@@ -8,7 +8,7 @@ const Footer = () => (
       </div>
 
       <p className="footer-description">
-        Eslogan
+        Prepárate para el futuro
       </p>
 
       <nav className="footer-nav">
