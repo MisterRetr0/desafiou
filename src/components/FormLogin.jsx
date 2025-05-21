@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaUser, FaLock } from 'react-icons/fa';
 import '../styles/FormLogin.css';
 
 export const FormLogin = () => {
