@@ -1,0 +1,141 @@
+.info-cards-container {
+  width: 100vw;
+  max-width: 100vw;
+  margin: 0;
+  padding: 2.5rem 0 2rem 0; /* Sin padding lateral */
+  background: #fff;
+  border-radius: 0;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.08);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.info-cards-header {
+  text-align: left;
+  margin-bottom: 2.5rem;
+}
+
+.info-cards-title-row {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.info-cards-logo {
+  font-size: 2.2rem;
+  color: #1976d2;
+}
+
+.info-cards-title-row h1 {
+  font-size: 2rem;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.bold {
+  font-weight: 700;
+  color: #222;
+}
+
+.blue {
+  color: #1976d2;
+  font-weight: 700;
+}
+
+.info-cards-desc {
+  margin: 0.2rem 0 1.2rem 0;
+  color: #444;
+  font-size: 1.1rem;
+}
+
+.info-cards-highlight {
+  color: #1976d2;
+  font-size: 1.3rem;
+  margin: 0.5rem 0 0.5rem 0;
+  font-weight: 700;
+}
+
+.info-cards-subdesc {
+  color: #222;
+  font-size: 1rem;
+  margin-bottom: 0;
+}
+
+.info-cards-row {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  align-items: stretch;
+  margin-top: 1.5rem;
+  flex-wrap: wrap;
+}
+
+.info-card {
+  background: #f8f9fa;
+  border-radius: 0; /* Borde recto */
+  box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+  padding: 1.5rem 1.2rem;
+  flex: 1 1 260px;
+  min-width: 220px;
+  max-width: 320px;
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  transition: box-shadow 0.2s, transform 0.2s;
+}
+
+.info-card:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.13);
+  transform: translateY(-6px) scale(1.03);
+}
+
+.info-card-icon {
+  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 0.7rem;
+}
+
+.info-card h3 {
+  margin: 0 0 0.5rem 0;
+  color: #222;
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.info-card p {
+  color: #444;
+  font-size: 0.98rem;
+  margin: 0;
+}
+
+.info-cards-inner {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+@media (max-width: 900px) {
+  .info-cards-row {
+    gap: 1rem;
+  }
+  .info-card {
+    padding: 1.2rem 0.8rem;
+    min-width: 160px;
+  }
+}
+
+@media (max-width: 700px) {
+  .info-cards-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .info-card {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+  }
+}

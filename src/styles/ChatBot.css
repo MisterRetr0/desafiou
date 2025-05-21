@@ -1,0 +1,38 @@
+.chatbot-btn {
+  position: fixed;
+  bottom: 32px;
+  right: 32px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  background: #1e78d0;
+  border: none;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+  cursor: pointer;
+  z-index: 2000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  animation: shake 1.5s infinite;
+  transition: box-shadow 0.2s;
+}
+
+.chatbot-btn:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+  animation: none;
+}
+
+.chatbot-img {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+}
+
+@keyframes shake {
+  0% { transform: translate(0, 0) rotate(0deg);}
+  20% { transform: translate(2px, -2px) rotate(-8deg);}
+  40% { transform: translate(-2px, 2px) rotate(8deg);}
+  60% { transform: translate(2px, -2px) rotate(-8deg);}
+  80% { transform: translate(-2px, 2px) rotate(8deg);}
+  100% { transform: translate(0, 0) rotate(0deg);}
+}
