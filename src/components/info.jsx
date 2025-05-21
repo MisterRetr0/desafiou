@@ -10,7 +10,7 @@ export const Info = ({ noBg }) => {
         noBg
           ? {}
           : {
-              backgroundImage: `url(${require("../assets/fondoINFO2.png")})`,
+              backgroundImage: `url(${require("../assets/FONDO.jpg")})`,
               backgroundSize: "80%", // <-- Aleja la imagen (más pequeña)
               backgroundPosition: "center top", // Puedes ajustar según prefieras
               backgroundRepeat: "no-repeat",

@@ -82,9 +82,13 @@
   align-items: flex-start;
   justify-content: center;
   margin-left: 5vw;
-  margin-top: 8vh;
+  margin-top: 12vh; /* Más espacio para separar del navbar */
   color: #fff;
   text-shadow: 0 2px 8px rgba(0,0,0,0.4);
+  background-color: rgba(0, 0, 0, 0.75); /* Negro opaco */
+  padding: 3.5rem 3rem 3.5rem 2.5rem; /* Más padding en todos los lados */
+  border-radius: 12px;
+  border-left: none;
 }
 
 .info-hero-title {
