@@ -1,7 +1,7 @@
 import React from 'react'
 import { Info } from '../components/info'
 import { InfoCards } from '../components/InfoCards'
-import fondoIMG from '../assets/fondoINFO2.png'
+import fondoIMG from '../assets/fondoINFO2.png' // <-- Importa así
 import NavBar from '../layout/NavBar'
 
 export const Home = () => {
@@ -16,7 +16,7 @@ export const Home = () => {
       }}
     >
       <NavBar />
-      <Info noBg /> {/* Pasa una prop para que Info no repita el fondo */}
+      <Info noBg />
       <InfoCards />
     </div>
   )
