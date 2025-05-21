@@ -15,7 +15,7 @@ export const FormLogin = () => {
   return (
     <div className="login-container">
       <form className="login-form" onSubmit={handleSubmit}>
-        <h2>Inicia Sesión</h2>
+        <h2>Bienvenido de nuevo</h2>
         <div className="form-group">
           <label>Usuario</label>
           <div className="input-container">

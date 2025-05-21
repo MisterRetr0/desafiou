@@ -12,7 +12,7 @@ const ChatInput = ({ onClose }) => {
   return (
     <div className="chatbot-chatbox">
       <div className="chatbot-chatbox-header">
-        <span>Asistente IA</span>
+        <span>OCTOPUS AI</span>
         <button className="chatbot-close-btn" onClick={onClose}>×</button>
       </div>
       <div className="chatbot-chatbox-body">

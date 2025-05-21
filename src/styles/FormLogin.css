@@ -1,28 +1,32 @@
+/* Moderniza el fondo y centra el formulario */
 .login-container {
-  color: white !important;
-  background-color: black !important;
+  min-height: 100vh;
   display: flex;
-  justify-content: center;
   align-items: center;
-  min-height: 60vh;
-  margin: 2rem auto 15rem;
+  justify-content: center;
+  background: linear-gradient(120deg, #1976d2 0%, #67b6ff 100%);
+  padding: 2rem 0;
 }
 
 .login-form {
-  background: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
-  padding: 40px;
-  border-radius: 20px;
+  background: #fff;
+  padding: 2.5rem 2rem 2rem 2rem;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
   width: 100%;
-  max-width: 400px;
-  box-shadow: 0 8px 32px 0 rgba(53, 53, 53, 0.37);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  max-width: 370px;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  animation: fadeInUp 0.7s;
 }
 
 .login-form h2 {
   text-align: center;
-  margin-bottom: 30px;
-  font-size: 2rem;
+  color: #1976d2;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+  letter-spacing: 1px;
 }
 
 .form-group {
@@ -30,84 +34,79 @@
 }
 
 .form-group label {
+  font-weight: 600;
+  color: #222;
+  margin-bottom: 0.3rem;
   display: block;
-  margin-bottom: 5px;
 }
 
 .input-container {
-  position: relative;
   display: flex;
   align-items: center;
+  background: #f1f7ff;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  border: 1px solid #e0e7ef;
+  margin-bottom: 0.2rem;
 }
 
 .input-icon {
-  position: absolute;
-  left: 10px;
-  color: rgba(255, 255, 255, 0.6);
-  font-size: 16px;
-  z-index: 1;
+  color: #1976d2;
+  font-size: 1.2rem;
+  margin-right: 0.7rem;
 }
 
 .input-container input {
-  width: 100%;
-  padding: 10px 10px 10px 35px;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 8px;
-  background: rgba(255, 255, 255, 0.1);
-  color: white;
-  font-size: 16px;
-  transition: all 0.3s ease;
-}
-
-.input-container input:focus {
+  border: none;
+  background: transparent;
   outline: none;
-  border-color: rgba(255, 255, 255, 0.5);
-  background: rgba(255, 255, 255, 0.15);
-}
-
-.input-container:hover input {
-  border-color: rgba(255, 255, 255, 0.3);
-  background: rgba(255, 255, 255, 0.12);
+  font-size: 1rem;
+  width: 100%;
+  padding: 0.5rem 0;
+  color: #222;
 }
 
 .login-button {
-  width: 100%;
-  padding: 12px;
-  background: rgba(255, 255, 255, 0.2);
-  color: white;
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 25px;  /* Aumentado de 8px a 25px para más redondeo */
-  font-size: 16px;
+  background: #1976d2;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 0.8rem 0;
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-top: 0.7rem;
+  transition: background 0.2s;
   cursor: pointer;
-  transition: all 0.3s ease;
-  margin-top: 20px;  /* Agregado para dar más espacio */
 }
 
-.login-button:hover {
-  background: rgba(255, 255, 255, 0.3);
-  border-color: rgba(255, 255, 255, 0.3);
+.login-button:disabled {
+  background: #b3d1f7;
+  cursor: not-allowed;
+}
+
+.login-button:hover:not(:disabled) {
+  background: #125ea7;
 }
 
 .register-text {
   text-align: center;
-  color: white;
-  margin-top: 20px;
+  margin-top: 1.2rem;
+  color: #444;
+  font-size: 0.98rem;
 }
 
 .register-text a {
-  color: white;
-  text-decoration: none;
+  color: #1976d2;
   font-weight: bold;
+  text-decoration: none;
+  margin-left: 0.3rem;
 }
 
 .register-text a:hover {
   text-decoration: underline;
 }
 
-input:-webkit-autofill,
-input:-webkit-autofill:hover,
-input:-webkit-autofill:focus {
-  -webkit-text-fill-color: white;
-  -webkit-box-shadow: 0 0 0px 1000px transparent inset;
-  transition: background-color 5000s ease-in-out 0s;
+@keyframes fadeInUp {
+  from { opacity: 0; transform: translateY(40px);}
+  to { opacity: 1; transform: translateY(0);}
 }
