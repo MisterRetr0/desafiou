@@ -1,7 +1,7 @@
 import React from 'react'
 import { Info } from '../components/info'
 import { InfoCards } from '../components/InfoCards'
-import fondoIMG from '../assets/FONDO2_1.png' // <-- Importa así
+import fondoIMG from '../assets/FONDO.jpg' // <-- Importa así
 import NavBar from '../layout/NavBar'
 
 export const Home = () => {
